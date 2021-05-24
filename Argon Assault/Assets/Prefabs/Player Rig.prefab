@@ -142,6 +142,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4417714562618224561}
     m_Modifications:
+    - target: {fileID: 379653532258554940, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.8595505
+      objectReference: {fileID: 0}
     - target: {fileID: 2235266721154249653, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
       propertyPath: m_Name
       value: Laser Right
@@ -207,6 +211,10 @@ PrefabInstance:
       value: 2.05
       objectReference: {fileID: 0}
     - target: {fileID: 4195155535027334250, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
+      propertyPath: lasersArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195155535027334250, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
       propertyPath: xRange
       value: 30
       objectReference: {fileID: 0}
@@ -214,10 +222,36 @@ PrefabInstance:
       propertyPath: positionYawFactor
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 4195155535027334250, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
+      propertyPath: lasersArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 4215190898544905097}
+    - target: {fileID: 4195155535027334250, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
+      propertyPath: lasersArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 5300085022463895466}
+    - target: {fileID: 5799175477128897963, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851939949368057750, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
+      propertyPath: m_Name
+      value: Laser Left
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
 --- !u!4 &539426215410900087 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2451774313817547851, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
+  m_PrefabInstance: {fileID: 2700504974455748668}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4215190898544905097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2235266721154249653, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
+  m_PrefabInstance: {fileID: 2700504974455748668}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5300085022463895466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7851939949368057750, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
   m_PrefabInstance: {fileID: 2700504974455748668}
   m_PrefabAsset: {fileID: 0}
