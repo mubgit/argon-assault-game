@@ -411,6 +411,16 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 4417714562618224560, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
   m_PrefabInstance: {fileID: 4417714562992417318}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1381040215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4215190898544905097, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+  m_PrefabInstance: {fileID: 4417714562992417318}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1775743077 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5300085022463895466, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+  m_PrefabInstance: {fileID: 4417714562992417318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2115093045
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +500,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2252416966500111446, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2252416966500111446, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: lasersArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2252416966500111446, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1381040215}
+    - target: {fileID: 2252416966500111446, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1775743077}
+    - target: {fileID: 2252416966500111446, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: lasersArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 1381040215}
+    - target: {fileID: 2252416966500111446, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: lasersArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 1775743077}
+    - target: {fileID: 2323525454589488128, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.8595505
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323525454589488128, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323525454589488128, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215190898544905097, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4417714562618224561, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 380.9
@@ -537,6 +587,30 @@ PrefabInstance:
     - target: {fileID: 4417714562618224563, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
       propertyPath: m_Name
       value: Player Rig
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300085022463895466, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: m_Name
+      value: Laser Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038237355835179043, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038237355835179043, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430969023615770007, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430969023615770007, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430969023615770007, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}

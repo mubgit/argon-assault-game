@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float controlSpeed = 30f;
     [SerializeField] float xRange = 5f;
     [SerializeField] float yRange = 3.5f;
+    [SerializeField] GameObject[] lasersArray;
 
     [SerializeField] float positionPitchFactor = -2f;
     [SerializeField] float controlPitchFactor = -10f;
@@ -20,9 +21,10 @@ public class PlayerController : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFirng();
     }
 
-    private void ProcessRotation()
+    void ProcessRotation()
     {
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
         float pitchDueToControlThrow = yThrow * controlPitchFactor;
@@ -35,7 +37,7 @@ public class PlayerController : MonoBehaviour
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
-    private void ProcessTranslation()
+    void ProcessTranslation()
     {
         xThrow = Input.GetAxis("Horizontal");
         yThrow = Input.GetAxis("Vertical");
@@ -49,5 +51,29 @@ public class PlayerController : MonoBehaviour
         float clampedYPos = Mathf.Clamp(newYPos, -yRange, yRange);
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
+    }
+
+    void ProcessFirng()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            SetLasersActive(true);
+
+        }
+        else
+        {
+            SetLasersActive(false);
+
+        }
+    }
+
+
+    private void SetLasersActive(bool isActive)
+    {
+        foreach (GameObject laser in lasersArray)
+        {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
+        }
     }
 }
