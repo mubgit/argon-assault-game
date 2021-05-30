@@ -238,7 +238,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser Left
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8120221159450670781, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
+    - {fileID: 5577092908417201711, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b734dc0a55b9c084389ba7d22b2314b5, type: 3}
 --- !u!4 &539426215410900087 stripped
 Transform:
