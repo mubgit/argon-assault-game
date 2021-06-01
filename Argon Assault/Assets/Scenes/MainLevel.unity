@@ -229,6 +229,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &214206876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 214206877}
+  - component: {fileID: 214206878}
+  m_Layer: 0
+  m_Name: ScoreBoard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &214206877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214206876}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 354.61993, y: 3.400673, z: 201.92683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &214206878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214206876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26be4f84eb8123740b3d3ca2b4b223b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &497938741
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,7 +305,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeathVFX: {fileID: 5420303105775588167, guid: 89102e504783b37448361c6ff929ee9f, type: 3}
-  parent: {fileID: 0}
+  parent: {fileID: 55715376}
+  scorePerHit: 15
 --- !u!136 &497938743
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -473,7 +517,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeathVFX: {fileID: 5420303105775588167, guid: 89102e504783b37448361c6ff929ee9f, type: 3}
-  parent: {fileID: 0}
+  parent: {fileID: 55715376}
+  scorePerHit: 15
 --- !u!136 &675878454
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -753,7 +798,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeathVFX: {fileID: 5420303105775588167, guid: 89102e504783b37448361c6ff929ee9f, type: 3}
-  parent: {fileID: 0}
+  parent: {fileID: 55715376}
+  scorePerHit: 15
 --- !u!1 &708951359
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathVFX: {fileID: 5420303105775588167, guid: 89102e504783b37448361c6ff929ee9f, type: 3}
   parent: {fileID: 0}
+  scorePerHit: 15
 --- !u!95 &970343830 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4417714562618224560, guid: fbe561d6b7052de41906ba880cd192ec, type: 3}
@@ -922,7 +969,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeathVFX: {fileID: 5420303105775588167, guid: 89102e504783b37448361c6ff929ee9f, type: 3}
-  parent: {fileID: 0}
+  parent: {fileID: 55715376}
+  scorePerHit: 15
 --- !u!136 &1055509150
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1033,7 +1081,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeathVFX: {fileID: 5420303105775588167, guid: 89102e504783b37448361c6ff929ee9f, type: 3}
-  parent: {fileID: 0}
+  parent: {fileID: 55715376}
+  scorePerHit: 15
 --- !u!136 &1814074188
 CapsuleCollider:
   m_ObjectHideFlags: 0
