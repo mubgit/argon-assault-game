@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &55715376 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6195682659501998822, guid: 43d4b52ac253a2848a17c7fc276f9429, type: 3}
-  m_PrefabInstance: {fileID: 6195682659557450966}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &58902492
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +299,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathVFX: {fileID: 5420303105775588167, guid: 89102e504783b37448361c6ff929ee9f, type: 3}
   hitVFX: {fileID: 5420303105775588167, guid: 238b8ad203fc52d4d86ca83c993cb438, type: 3}
-  parent: {fileID: 55715376}
   scorePerHit: 15
   hitPoints: 50
 --- !u!136 &497938743
@@ -518,7 +512,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathVFX: {fileID: 5420303105775588167, guid: 89102e504783b37448361c6ff929ee9f, type: 3}
   hitVFX: {fileID: 5420303105775588167, guid: 238b8ad203fc52d4d86ca83c993cb438, type: 3}
-  parent: {fileID: 55715376}
   scorePerHit: 15
   hitPoints: 50
 --- !u!136 &675878454
@@ -714,7 +707,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathVFX: {fileID: 5420303105775588167, guid: 89102e504783b37448361c6ff929ee9f, type: 3}
   hitVFX: {fileID: 5420303105775588167, guid: 238b8ad203fc52d4d86ca83c993cb438, type: 3}
-  parent: {fileID: 55715376}
   scorePerHit: 15
   hitPoints: 3
 --- !u!1 &708951359
@@ -847,7 +839,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathVFX: {fileID: 5420303105775588167, guid: 89102e504783b37448361c6ff929ee9f, type: 3}
   hitVFX: {fileID: 5420303105775588167, guid: 238b8ad203fc52d4d86ca83c993cb438, type: 3}
-  parent: {fileID: 55715376}
   scorePerHit: 15
   hitPoints: 3
 --- !u!95 &970343830 stripped
@@ -889,7 +880,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathVFX: {fileID: 5420303105775588167, guid: 89102e504783b37448361c6ff929ee9f, type: 3}
   hitVFX: {fileID: 5420303105775588167, guid: 238b8ad203fc52d4d86ca83c993cb438, type: 3}
-  parent: {fileID: 55715376}
   scorePerHit: 15
   hitPoints: 50
 --- !u!136 &1055509150
@@ -1003,7 +993,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathVFX: {fileID: 5420303105775588167, guid: 89102e504783b37448361c6ff929ee9f, type: 3}
   hitVFX: {fileID: 5420303105775588167, guid: 238b8ad203fc52d4d86ca83c993cb438, type: 3}
-  parent: {fileID: 55715376}
   scorePerHit: 15
   hitPoints: 50
 --- !u!136 &1814074188
@@ -1375,6 +1364,10 @@ PrefabInstance:
     - target: {fileID: 6195682659501998841, guid: 43d4b52ac253a2848a17c7fc276f9429, type: 3}
       propertyPath: m_Name
       value: Spawn At Runtime
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195682659501998841, guid: 43d4b52ac253a2848a17c7fc276f9429, type: 3}
+      propertyPath: m_TagString
+      value: SpawnAtRuntime
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43d4b52ac253a2848a17c7fc276f9429, type: 3}
